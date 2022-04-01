@@ -24,7 +24,10 @@ app.use(express.json())
 app.use(express.urlencoded({
     extended: true
 }))
-
+const corsOptions = {
+    origin: ["http://localhost:3000", "https://merch-shop-kpop.vercel.app"],
+    optionsSucessStatus: 200
+}
 //activate cors
 app.use(cors())
 
