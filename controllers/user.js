@@ -1,5 +1,5 @@
 const User = require("../models/user")
-const bcrypt = require ("bcrypt")
+const bcrypt = require ("bcryptjs")
 const auth = require("../auth")//auth.js file
 const user = require("../models/user")
 const product = require("../models/product")
